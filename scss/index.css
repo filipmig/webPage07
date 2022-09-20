@@ -1,0 +1,1279 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;500;700&family=Raleway:ital,wght@1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --yellow: #f5bf23;
+  --grey:  grey;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  background-color: var(--yellow);
+  padding: 1.2rem 1.4rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scrollToTop i {
+  font-size: 1.5rem;
+}
+
+.scrollToTop:hover i {
+  color: #fff;
+  -webkit-transition: .5s infinite;
+  transition: .5s infinite;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.5))), url(../images/spices1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../images/spices1.jpg);
+  opacity: .9;
+  overflow: hidden;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container {
+  margin: 3rem auto;
+}
+
+.header .container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem auto .1rem;
+  padding: 1rem;
+}
+
+.header .container .info .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--white);
+  margin-right: 17rem;
+}
+
+.header .container .info .name h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  margin-right: 1rem;
+}
+
+.header .container .info .name i {
+  font-size: 2.5rem;
+}
+
+.header .container .info .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: .5rem;
+}
+
+.header .container .info .contact h2 {
+  font-size: 1.5rem;
+  color: var(--grey);
+  margin-right: 1rem;
+}
+
+.header .container .info .contact span {
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
+
+.header .container .main {
+  width: 60rem;
+  height: 40rem;
+  background: url(../images/spices1.jpg);
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  background-position: center;
+  position: relative;
+  background-size: contain;
+  border-radius: 2rem;
+  -webkit-box-shadow: 5rem 5rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 5rem 5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.header .container .main h1 {
+  position: absolute;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: var(--white);
+  top: 26%;
+  left: 55%;
+  letter-spacing: 0.1rem;
+}
+
+.header .container .main .paragraph1 {
+  position: absolute;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 2rem;
+  top: 47%;
+  left: 55%;
+  font-weight: 900;
+}
+
+.header .container .main .paragraph2 {
+  position: absolute;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 2rem;
+  top: 53%;
+  left: 55%;
+  font-weight: 900;
+}
+
+.header .container .main .btn {
+  width: 10rem;
+  height: 3rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f5bf23), to(#f5bf23));
+  background: linear-gradient(to right, #f5bf23, #f5bf23);
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  top: 70%;
+  left: 55%;
+}
+
+.header .container .main .btn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  -webkit-transition: left .5s;
+  transition: left .5s;
+}
+
+.header .container .main .btn:hover::before {
+  left: 100%;
+}
+
+.header .container .social {
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  color: var(--grey);
+}
+
+.header .container .social i {
+  cursor: pointer;
+  margin-right: 3rem;
+}
+
+.header .container .social i:hover {
+  color: var(--yellow);
+}
+
+.container .section-1 {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.5))), url(../images/spices3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../images/spices3.jpg);
+  overflow: hidden;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .section-1 .image {
+  width: 45rem;
+  height: 35rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin: 5rem;
+}
+
+.container .section-1 .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+}
+
+.container .section-1 .info {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10rem 2rem 1rem;
+}
+
+.container .section-1 .info .heading1-section {
+  font-size: 4rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.container .section-1 .info .heading2-section {
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.container .section-1 .info .paragraph1 {
+  font-size: 1.5rem;
+  color: var(--grey);
+  margin-bottom: 2rem;
+}
+
+.container .section-1 .info .paragraph2 {
+  font-size: 1.5rem;
+  color: var(--grey);
+}
+
+.container .section-2 {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.5))), url(../images/pizza2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../images/pizza2.jpg);
+  overflow: hidden;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section-2 .wrapper .heading1-section {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: var(--white);
+  letter-spacing: 0.2rem;
+  margin: 4rem auto 1rem;
+  text-align: center;
+}
+
+.container .section-2 .wrapper .heading2-section {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: var(--white);
+  letter-spacing: 0.2rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.container .section-2 .wrapper .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem auto;
+}
+
+.container .section-2 .wrapper .menu .table {
+  width: 20rem;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: .1rem white solid;
+  margin: 2rem;
+}
+
+.container .section-2 .wrapper .menu .table h1 {
+  font-size: 2rem;
+  color: var(--white);
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.container .section-2 .wrapper .menu .table .line {
+  width: 20rem;
+  height: .1rem;
+  background-color: var(--yellow);
+}
+
+.container .section-2 .wrapper .menu .table .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.container .section-2 .wrapper .menu .table .list .name {
+  color: var(--grey);
+  font-size: 1.2rem;
+  margin-right: 2rem;
+}
+
+.container .section-2 .wrapper .menu .table .list .name p {
+  padding: .3rem;
+}
+
+.container .section-2 .wrapper .menu .table .list .price {
+  color: var(--yellow);
+  font-size: 1.2rem;
+}
+
+.container .section-2 .wrapper .menu .table .list .price p {
+  padding-bottom: .6rem;
+}
+
+.container .section-3 {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.5))), url(../images/pizza3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../images/pizza3.jpg);
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.container .section-3 .heading1-section {
+  font-size: 4rem;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 3rem auto;
+  letter-spacing: 0.3rem;
+}
+
+.container .section-3 .heading2-section {
+  font-size: 2.5rem;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem auto;
+  letter-spacing: 0.1rem;
+}
+
+.container .section-3 .orders .orders1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section-3 .orders .orders1 .order {
+  width: 17rem;
+  height: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--white);
+  margin-right: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section-3 .orders .orders1 .order i {
+  font-size: 4.5rem;
+  padding: 2rem;
+}
+
+.container .section-3 .orders .orders1 .order h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--yellow);
+}
+
+.container .section-3 .orders .orders1 .order:hover h1 {
+  color: var(--white);
+}
+
+.container .section-3 .orders .orders1 .order:hover {
+  background-color: var(--yellow);
+  -webkit-box-shadow: 0 1rem 2rem var(--yellow);
+          box-shadow: 0 1rem 2rem var(--yellow);
+}
+
+.container .section-3 .orders .orders2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.container .section-3 .orders .orders2 .order {
+  width: 17rem;
+  height: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--white);
+  margin-right: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section-3 .orders .orders2 .order i {
+  font-size: 4.5rem;
+  padding: 2rem;
+}
+
+.container .section-3 .orders .orders2 .order h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--yellow);
+}
+
+.container .section-3 .orders .orders2 .order:hover h1 {
+  color: var(--white);
+}
+
+.container .section-3 .orders .orders2 .order:hover {
+  background-color: var(--yellow);
+  -webkit-box-shadow: 0 1rem 2rem var(--yellow);
+          box-shadow: 0 1rem 2rem var(--yellow);
+}
+
+.container .section-4 {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.5))), url(../images/dish.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../images/dish.jpg);
+  overflow: hidden;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .section-4 .heading1-section {
+  font-size: 4rem;
+  margin: 4rem auto 3rem auto;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+.container .section-4 .wrapper-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 4rem auto;
+}
+
+.container .section-4 .wrapper-time .time {
+  width: 30rem;
+  height: 8rem;
+  border: 0.1rem var(--white) solid;
+  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .section-4 .wrapper-time .time h2 {
+  font-size: 2rem;
+  color: var(--white);
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+}
+
+.container .section-4 .wrapper-time .time p {
+  font-size: 1.5rem;
+  color: var(--grey);
+  letter-spacing: 0.1rem;
+}
+
+.container .section-4 .heading2-section {
+  font-size: 4rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 2rem auto;
+}
+
+.container .section-4 .wrapper-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.container .section-4 .wrapper-info .info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container .section-4 .wrapper-info .info .field {
+  width: 20rem;
+  margin-right: 2rem;
+  height: 3rem;
+  text-align: center;
+  border: none;
+  border-bottom: 0.1rem var(--white) solid;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+.container .section-4 .wrapper-info .btn {
+  width: 10rem;
+  height: 3rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f5bf23), to(#f5bf23));
+  background: linear-gradient(to right, #f5bf23, #f5bf23);
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  top: 95%;
+}
+
+.container .section-4 .wrapper-info .btn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  -webkit-transition: left .5s;
+  transition: left .5s;
+}
+
+.container .section-4 .wrapper-info .btn:hover::before {
+  left: 100%;
+}
+
+.container .footer {
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+}
+
+.container .footer .wrapper-info {
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.container .footer .wrapper-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 6rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+  .scrollToTop {
+    bottom: 2rem;
+    right: 2rem;
+  }
+  .header {
+    height: 100vh;
+  }
+  .header .container {
+    margin: 1rem auto;
+  }
+  .header .container .main {
+    height: 35rem;
+  }
+  .container .section-1 .image {
+    height: 30rem;
+  }
+  .container .section-1 .info .heading1-section {
+    font-size: 3rem;
+  }
+  .container .section-1 .info .heading2-section {
+    font-size: 2rem;
+  }
+  .container .section-1 .info .paragraph1 {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+  .container .section-1 .info .paragraph2 {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+  .container .section-2 .wrapper .heading1-section {
+    font-size: 3rem;
+  }
+  .container .section-2 .wrapper .heading2-section {
+    font-size: 1.7rem;
+    margin: 1rem auto;
+  }
+  .container .section-2 .wrapper .menu .table h1 {
+    font-size: 1.6rem;
+  }
+  .container .section-3 .heading1-section {
+    font-size: 3rem;
+  }
+  .container .section-3 .heading2-section {
+    font-size: 1.7rem;
+    margin: 1rem auto;
+  }
+  .container .section-3 .orders .orders1 .order i {
+    font-size: 4rem;
+  }
+  .container .section-3 .orders .orders1 .order h1 {
+    font-size: 1.3rem;
+  }
+  .container .section-3 .orders .orders2 .order i {
+    font-size: 4rem;
+  }
+  .container .section-3 .orders .orders2 .order h1 {
+    font-size: 1.3rem;
+  }
+  .container .section-4 .heading1-section {
+    font-size: 3rem;
+    margin: 3rem auto 2rem auto;
+  }
+  .container .section-4 .heading2-section {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .scrollToTop {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1rem 1.1rem;
+  }
+  .header .container {
+    margin: 0rem auto;
+  }
+  .header .container .main {
+    height: 35rem;
+  }
+  .header .container .social {
+    margin: 1rem auto;
+  }
+  .container .section-1 .image {
+    width: 35rem;
+    height: 28rem;
+  }
+  .container .section-1 .info {
+    padding: 0rem 5rem 2rem 1rem;
+  }
+  .container .section-1 .info .heading1-section {
+    font-size: 2rem;
+  }
+  .container .section-1 .info .heading2-section {
+    font-size: 1.5rem;
+  }
+  .container .section-1 .info .paragraph1 {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .container .section-1 .info .paragraph2 {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .container .section-2 .wrapper .heading1-section {
+    font-size: 3rem;
+  }
+  .container .section-2 .wrapper .heading2-section {
+    font-size: 1.3rem;
+    margin: 1rem auto;
+  }
+  .container .section-2 .wrapper .menu .table {
+    width: 17rem;
+    margin: 1rem;
+  }
+  .container .section-2 .wrapper .menu .table h1 {
+    font-size: 1.6rem;
+  }
+  .container .section-2 .wrapper .menu .table .line {
+    width: 17rem;
+  }
+  .container .section-3 .heading1-section {
+    font-size: 3rem;
+  }
+  .container .section-3 .heading2-section {
+    font-size: 1.5rem;
+    margin: .6rem auto;
+  }
+  .container .section-3 .orders .orders1 .order i {
+    font-size: 3rem;
+  }
+  .container .section-3 .orders .orders1 .order h1 {
+    font-size: 1.3rem;
+  }
+  .container .section-3 .orders .orders2 {
+    margin-top: 1rem;
+  }
+  .container .section-3 .orders .orders2 .order i {
+    font-size: 3rem;
+  }
+  .container .section-3 .orders .orders2 .order h1 {
+    font-size: 1.3rem;
+  }
+  .container .section-4 .heading1-section {
+    font-size: 3rem;
+    margin: 2rem auto 1rem auto;
+  }
+  .container .section-4 .wrapper-time .time {
+    width: 25rem;
+  }
+  .container .section-4 .wrapper-time .time h2 {
+    font-size: 1.7rem;
+  }
+  .container .section-4 .heading2-section {
+    font-size: 3rem;
+  }
+  .container .section-4 .wrapper-info {
+    margin: 1rem auto;
+  }
+  .container .section-4 .wrapper-info .info .field {
+    width: 16rem;
+  }
+  .container .section-4 .wrapper-info .btn {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+  .container .footer .wrapper-info .info {
+    font-size: 1rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  .scrollToTop {
+    bottom: 1rem;
+    right: 1rem;
+    padding: .8rem .9rem;
+  }
+  .header {
+    height: 100vh;
+  }
+  .header .container {
+    margin: 0 auto;
+  }
+  .header .container .info .name {
+    margin-right: 3rem;
+  }
+  .header .container .info .name h1 {
+    font-size: 2.5rem;
+  }
+  .header .container .info .name i {
+    display: none;
+  }
+  .header .container .main {
+    width: 100%;
+    background: none;
+  }
+  .header .container .main h1 {
+    left: 30%;
+  }
+  .header .container .main .paragraph1 {
+    left: 30%;
+  }
+  .header .container .main .paragraph2 {
+    left: 30%;
+  }
+  .header .container .main .btn {
+    left: 30%;
+  }
+  .container .section-1 {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .section-1 .image {
+    width: 40rem;
+    margin: 1rem 0;
+  }
+  .container .section-1 .info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
+  }
+  .container .section-1 .info .heading1-section {
+    font-size: 2.5rem;
+  }
+  .container .section-1 .info .heading2-section {
+    font-size: 1.5rem;
+  }
+  .container .section-1 .info .paragraph1 {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+  .container .section-1 .info .paragraph2 {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+  .container .section-2 {
+    height: 180vh;
+  }
+  .container .section-2 .wrapper .heading1-section {
+    font-size: 3rem;
+  }
+  .container .section-2 .wrapper .heading2-section {
+    font-size: 1.3rem;
+    margin: 1rem auto;
+  }
+  .container .section-2 .wrapper .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .section-2 .wrapper .menu .table {
+    width: 17rem;
+    margin: 1rem;
+  }
+  .container .section-2 .wrapper .menu .table h1 {
+    font-size: 1.6rem;
+  }
+  .container .section-2 .wrapper .menu .table .line {
+    width: 17rem;
+  }
+  .container .section-3 {
+    height: 80vh;
+  }
+  .container .section-3 .heading1-section {
+    font-size: 3rem;
+  }
+  .container .section-3 .heading2-section {
+    font-size: 1.5rem;
+    margin: .6rem auto;
+  }
+  .container .section-3 .orders .orders1 .order i {
+    font-size: 3rem;
+  }
+  .container .section-3 .orders .orders1 .order h1 {
+    font-size: 1.3rem;
+  }
+  .container .section-3 .orders .orders2 {
+    margin-top: 1rem;
+  }
+  .container .section-3 .orders .orders2 .order i {
+    font-size: 3rem;
+  }
+  .container .section-3 .orders .orders2 .order h1 {
+    font-size: 1.3rem;
+  }
+  .container .section-4 .heading1-section {
+    font-size: 3rem;
+    margin: 2rem auto 1rem auto;
+  }
+  .container .section-4 .wrapper-time {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .section-4 .wrapper-time .time {
+    width: 25rem;
+    margin-bottom: 1rem;
+  }
+  .container .section-4 .wrapper-time .time h2 {
+    font-size: 1.7rem;
+  }
+  .container .section-4 .heading2-section {
+    font-size: 3rem;
+  }
+  .container .section-4 .wrapper-info {
+    margin: 1rem auto;
+  }
+  .container .section-4 .wrapper-info .info {
+    margin-top: .3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .section-4 .wrapper-info .info .field {
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+  .container .section-4 .wrapper-info .btn {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+  .container .footer .wrapper-info {
+    padding: 3rem 5rem;
+  }
+  .container .footer .wrapper-info .info {
+    font-size: .7rem;
+    letter-spacing: 0.1rem;
+    margin-right: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+  .scrollToTop {
+    bottom: 1rem;
+    right: 1rem;
+    padding: .8rem .9rem;
+  }
+  .header {
+    height: 100vh;
+  }
+  .header .container {
+    margin: 0 auto;
+  }
+  .header .container .info .name {
+    margin-right: 3rem;
+  }
+  .header .container .info .name h1 {
+    font-size: 2.5rem;
+  }
+  .header .container .info .name i {
+    display: none;
+  }
+  .header .container .main {
+    width: 100%;
+    background: none;
+  }
+  .header .container .main h1 {
+    left: 30%;
+  }
+  .header .container .main .paragraph1 {
+    left: 30%;
+  }
+  .header .container .main .paragraph2 {
+    left: 30%;
+  }
+  .header .container .main .btn {
+    left: 30%;
+  }
+  .container .section-1 {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .section-1 .image {
+    width: 40rem;
+    margin: 1rem 0;
+  }
+  .container .section-1 .info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
+  }
+  .container .section-1 .info .heading1-section {
+    font-size: 2.5rem;
+  }
+  .container .section-1 .info .heading2-section {
+    font-size: 1.5rem;
+  }
+  .container .section-1 .info .paragraph1 {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+  .container .section-1 .info .paragraph2 {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+  .container .section-2 {
+    height: 180vh;
+  }
+  .container .section-2 .wrapper .heading1-section {
+    font-size: 3rem;
+  }
+  .container .section-2 .wrapper .heading2-section {
+    font-size: 1.3rem;
+    margin: 1rem auto;
+  }
+  .container .section-2 .wrapper .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .section-2 .wrapper .menu .table {
+    width: 17rem;
+    margin: 1rem;
+  }
+  .container .section-2 .wrapper .menu .table h1 {
+    font-size: 1.6rem;
+  }
+  .container .section-2 .wrapper .menu .table .line {
+    width: 17rem;
+  }
+  .container .section-3 {
+    height: 80vh;
+  }
+  .container .section-3 .heading1-section {
+    font-size: 3rem;
+  }
+  .container .section-3 .heading2-section {
+    font-size: 1.5rem;
+    margin: .6rem auto;
+  }
+  .container .section-3 .orders .orders1 .order i {
+    font-size: 3rem;
+  }
+  .container .section-3 .orders .orders1 .order h1 {
+    font-size: 1.3rem;
+  }
+  .container .section-3 .orders .orders2 {
+    margin-top: 1rem;
+  }
+  .container .section-3 .orders .orders2 .order i {
+    font-size: 3rem;
+  }
+  .container .section-3 .orders .orders2 .order h1 {
+    font-size: 1.3rem;
+  }
+  .container .section-4 .heading1-section {
+    font-size: 3rem;
+    margin: 2rem auto 1rem auto;
+  }
+  .container .section-4 .wrapper-time {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .section-4 .wrapper-time .time {
+    width: 25rem;
+    margin-bottom: 1rem;
+  }
+  .container .section-4 .wrapper-time .time h2 {
+    font-size: 1.7rem;
+  }
+  .container .section-4 .heading2-section {
+    font-size: 3rem;
+  }
+  .container .section-4 .wrapper-info {
+    margin: 1rem auto;
+  }
+  .container .section-4 .wrapper-info .info {
+    margin-top: .3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .section-4 .wrapper-info .info .field {
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+  .container .section-4 .wrapper-info .btn {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+  .container .footer .wrapper-info {
+    padding: 3rem 5rem;
+  }
+  .container .footer .wrapper-info .info {
+    font-size: .7rem;
+    letter-spacing: 0.1rem;
+    margin-right: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=index.css.map */
